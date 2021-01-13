@@ -1,0 +1,43 @@
+Design Notes:
+
+FRONTEND LAYOUT ------------
+Fixed Header
+    Title
+
+Body
+    Container
+        Grid <Flatlist>?
+            ...
+                Blog Post
+                    Container
+                        Image
+                        Details
+                            Date
+                            Title
+                            Author
+            ...
+
+Footer?
+
+STAKEHOLDER GOALS --------------
+- start successfully with 'npm start'
+- follow 'mock.png' 
+- Header  
+    - Yellow (#f9c511) w/ text
+- Content
+    - Display Blog Posts as 3 column view
+    - paginated (1-indexed)
+    - display all entries on load (promise chaining?)
+    - store blog data in useful state for appending/sorting/etc
+- reuse components amap
+- 'styled-components' library is a favorite
+
+
+RESPONSIVE CHANGES ----------------
+- using 640px common mobile cutoff width
+- Blog Grid (vertical listing, single column)
+
+BACKEND ----------------
+Fetch-promise the api 
+    (https://storage.googleapis.com/twochairs-interview-materials/interview-exercise/blog-data-1.json)
+Paginated but fetch all pages on load (promise-linking)
