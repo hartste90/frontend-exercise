@@ -1,12 +1,13 @@
+import styled from 'styled-components';
 import './App.css';
+import colors from './config/colors';
+import BlogPage from './pages/BlogPage';
 
 function App() {
+
   return (
     <div className="root">
-      <header>
-        <h2>two chairs frontend exercise</h2>
-        <p>Please replace this with your solution!</p>
-      </header>
+        <BlogPage/>
     </div>
   );
 }
