@@ -9,10 +9,12 @@ const Container = styled.section`
   color: ${colors.white};
 `;
 
+const footerText = "a frontend-exercise by Steven Hart";
+
 function Footer(props) {
     return (
         <Container>
-                a frontend-exercise by Steven Hart
+                {footerText}
         </Container>
     );
 }

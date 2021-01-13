@@ -9,10 +9,12 @@ const Container = styled.h1`
     padding: 2rem;
 `;
 
+const blogPlaceholderText = "We're dilligently working on our blogs, please check back later!";
+
 function ContentPlaceholder(props) {
     return (
         <Container>
-            We're dilligently working on our blogs, please check back later!
+            {blogPlaceholderText};            
             </Container>
     );
 }

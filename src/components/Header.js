@@ -21,11 +21,13 @@ const HeaderTitle = styled.section`
   }
 `;
 
+const headerText = "Talk Therapy Blog";
+
 function Header(props) {
     return (
         <Container>
             <HeaderTitle>
-                Talk Therapy Blog
+                {headerText}
             </HeaderTitle>
         </Container>
     );
