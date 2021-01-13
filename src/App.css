@@ -1,5 +1,26 @@
+/* classes */
 .root {
-  width: 100vw;
-  height: 100vh;
-  padding: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+.blogData {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 2rem 1rem;
+}
+
+/* responsive media queries */
+@media (max-width: 640px) {
+  .blogData {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem 1rem;
+  }
+}
+
+/* font imports */
+@font-face {
+  font-family: "Faijoa";
+  src: local("Feijoa"), url(./fonts/Feijoa.otf) format("otf");
 }
